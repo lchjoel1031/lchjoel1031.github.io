@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+ 
+  <meta http-equiv="Content-Type" content="text/html;CHARSET=ISO-8859-1">
+  <title>FOCAS spectral sensitivity calculator at blue end (smaller than 3800 A) </title>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../style.css">
+</head>
+  <body bgcolor="white">
+ 
+<table border="0" cellpadding="5">
+ <tbody>
+    <tr>
+ <!-- NAVIGATION BAR--> <td class="nav" valign="top" width="135"> <!-- SUBARU LOGO--> 
+      <center> <a href="../../../../index.html"><img src="../../../../icons/logo.gif"
+ border="0" align="middle" vspace="10" hspace="17">
+      </a> </center>
+ <!-- NAVIGATION--> 
+      <p><a class="nav" href="../../../../Latestnews/index.html">News</a> 
+      </p>
+      <p><a class="nav" href="../../../../ThisMonth/index.html">This Month</a> 
+      </p>
+      <p><a class="nav" href="../../../../Introduction/index.html">Introduction</a> 
+      </p>
+      <p><a class="path" href="../../../index.html">Observing</a>
+      <div class="indent"> <a class="path" href="../../index.html">Instruments</a> 
+      <div class="indent"> <a class="path" href="../index.html">FOCAS</a> 
+      <div class="indent"> <a class="path" href="index.html">Spectroscopy</a> 
+      <div class="indent"> <a class="nav" href="grisms.html">Grisms</a> <br>
+      <a class="nav" href="efficiency.html">Efficiency</a> <br>
+      <span class="thispage">MOS</span> </div>
+ </div>
+ </div>
+ </div>
+ 
+      <p><a class="nav" href="../../../../Science/index.html">Science</a> 
+      </p>
+      <p><a class="nav" href="../../../../Gallery/index.html">Gallery</a> 
+      </p>
+      <p><a class="nav" href="../../../../Information/index.html">Information</a> 
+      </p>
+      <p><a class="nav" href="../../../../Information/site.html">Site Map</a> 
+      </p>
+      </td>
+  <!-- MAIN PAGE FOLLOWS--> <td valign="top">
+
+<!-- body bgcolor=#ffffff-->
+<center>
+<h1>FOCAS spectrograph sensitivity calculator</h1>
+</center>
+<form action="/cgi-bin/focas_sens.cgi" method=post>
+1. Source: <select type=text name="source">
+    <option value=point>point source
+    <option value=extend>extended source
+</select>
+<br>
+2. Grism: <select type=text name="grism" maxlength=20 size=1>
+  <option value=150+SY47-Center>150+SY47 Center
+  <option value=150+L550-Center>150+L550 Center
+  <option value=300B-Center>300B Center
+  <option value=300B-Offset>300B Offset
+  <option value=300R-Center>300R Center
+  <option value=300R+L600-Offset>300R+L600 Offset 
+  <option value=VPH450-Center>VPH450 Center
+  <option value=VPH520-Center>VPH520 Center
+  <option value=VPH520+L600-Center>VPH520+L600 Center
+  <option value=VPH520-Offset>VPH520 Offset
+  <option value=VPH520+L600-Offset>VPH520+L600 Offset
+  <option value=VPH650-Center>VPH650 Center
+  <option value=VPH850-Center>VPH850 Center
+  <option value=VPH850-Offset>VPH850 Offset
+  <option value=VPH900-Center>VPH900 Center
+  <option value=VPH900-Offset>VPH900 Offset
+  <option value=Echelle-Center>Echelle Center
+</select>
+<br>
+<!-- 3. Dispersion: <input type=text name="dispersion" maxlength=10 size=10> [A/unbinned-pix]<br> -->
+3. Seeing: <input type=text name="seeing" maxlength=10 size=10 value="0.8"> [arcsec]<br>
+4. Source flux: <input type=text name="flux" maxlength=10 size=10 value="3.14e-18"> [erg/s/cm^2/A] <br> 
+5. Slit width: <select type=text name="slitwidth" maxlength=10 size=1>
+  <option value=0.2>0.2 arcsec
+  <option value=0.4>0.4 arcsec
+  <option value=0.6>0.6 arcsec
+  <option selected value=0.8>0.8 arcsec
+  <option value=1.0>1.0 arcsec
+  <option value=2.0>2.0 arcsec
+    </select>
+    <br>
+6. Extraction aperture: <input type=text name="aperture" maxlength=10 size=10 value="5"> [pixel]<br>   
+7. CCD binning: <select type=text name="binning" maxlength=10 size=1>
+  <option value=1x1>1x1
+  <option selected value=2x1>2x1
+  <option value=2x2>2x2
+    </select>
+    <br>
+8. Exposure time: <input type=text name="exptime" maxlength=10 size=10 value="1200"> [sec]<br>     
+
+<input type=submit value=submit> 
+<input type=reset value=reset > 
+</form>
+
+  </td>
+    </tr>
+  </tbody>
+</table>
+  <br clear="all">
+ 
+<hr> <a class="copyright" href="../../../../Information/copyright.html">Copyright 
+&copy; 2000-2009 Subaru Telescope, NAOJ. All rights reserved.</a>  <br>
+</body>
+</html>
